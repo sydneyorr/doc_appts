@@ -6,7 +6,7 @@ import ListLoader from "./ListLoader";
 import { Card } from "semantic-ui-react";
 
 export default function Doctors() {
-  const {data: doctors, loading, error} = useAxiosOnMount("/api/doctors")
+  // const {data: doctors, loading, error} = useAxiosOnMount("/api/doctors")
 // const [doctors, setDoctors] = useState([])
 
 //   useEffect(() => {

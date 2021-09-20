@@ -8,6 +8,7 @@ import Doctors from "./components/Doctors";
 import Doctor from "./components/Doctor";
 import Users from "./components/Users";
 import AppointmentsListLoader from "./components/AppointmentsListLoader";
+import NewAppointment from "./components/NewAppointment";
 // import Appointments from "./components/Appointments";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/doctors" component={Doctors} />
           <Route exact path="/users" component={Users} />
           <Route exact path="/appointments" component={AppointmentsListLoader} />
+          <Route exact path="/appointments/new" component={NewAppointment} />
           <Route exact path="/doctors/:id" component={Doctor} />
           <Route component={() => <p>react router 404 path not found</p>} />
         </Switch>

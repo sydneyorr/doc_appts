@@ -6,7 +6,7 @@ import ListLoader from "./ListLoader";
 import User from "./User";
 
 const Users = () => {
-  const {data: users, loading, error } = useAxiosOnMount("/api/users");
+  // const {data: users, loading, error } = useAxiosOnMount("/api/users");
 
   // const renderUsers = () => {
   //   console.log(users)
