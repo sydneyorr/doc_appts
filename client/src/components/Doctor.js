@@ -1,13 +1,13 @@
 import React from "react"
-import { Card } from "semantic-ui-react";
+import { Button, Card } from "semantic-ui-react";
 
 const Doctor = (props) => {
-  const {doctor} = props;
+  const {doctor, deleteDoctor} = props;
   return (
     <Card>
       <Card.Content>
       <p>Doctor: {doctor.name} </p>
-      <p>Specialty: {doctor.specialty}</p>
+      <Button onClick={()=>{deleteDoctor(doctor.id)}} color="red">Delete</Button>
       </Card.Content>
     </Card>
   )
